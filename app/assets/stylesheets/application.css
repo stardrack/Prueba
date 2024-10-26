@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/* General styling for the form */
+
+
+form {
+ 
+    color: #007bff;
+    width: 30%;
+    margin-left: 32%;
+    padding: 50px;
+    background-color: #2c2f35;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style for the input fields */
+input[type="text"], textarea {
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style for the submit button */
+input[type="submit"], button {
+    width: 50%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #45a049ab;
+}
+
+/* Add some spacing for better structure */
+label {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Styling for the back link */
+.a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust the form title */
+h1 {
+    text-align: center;
+    margin-top: 8%;
+    font-size: 2.5rem;
+    color: #000000;
+}
